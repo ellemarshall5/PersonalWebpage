@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+@font-face{
+    font-family:'raleway';
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+}
+
+html {
+    background-color: black;
+    height: 100%;
+}
+
+body{
+    background-color: white;
+    min-height: 100%;  
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1020px;  
+    width: 100%;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    box-shadow: 20px 0px 15px gray, -20px 0px 15px gray;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+nav{
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 15px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+a{
+    color: black;
+    font-family: 'raleway';
+    text-decoration-line: none;
+}
+a:hover{
+    color:darkolivegreen;
+}
+
+
+article p{
+    font-family: 'raleway';
+    font-size: 1em;
+    text-align: left;
+    padding-bottom: 10px;
+    text-align: center;   
+}
+
+footer {
+	text-align: center;
+	font-size: 0.6em;
+	font-family: 'raleway';
+	padding-bottom: 10px;
+    padding-top: 5px;
+    position: static;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer img{
+    width: 100%;
+    height: auto;
+    
+}

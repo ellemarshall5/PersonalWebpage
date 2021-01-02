@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <!--
+    Personal Website
+    Author: Danielle Marshall
+    Date:  6/17/20 
+
+    Filename: contact.html
+   -->
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+    <link href="Stylesheets/website.css" rel="stylesheet"/> 
+    <link href="Stylesheets/contact.css" rel="stylesheet"/> 
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Raleway:wght@100&display=swap');
+    </style>
+
+   </head>
+
+   <body>
+    <header>
+      <h1>Danielle Marshall</h1>      
+      <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="school.html">School</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+          </ul>
+      </nav>
+      </header>
+
+      <form action="http://icarus.cs.weber.edu/~linda/cs2350/submit_pet1.php" method="POST">
+        <fieldset id="contactMe">
+            <legend>Contact Info</legend>
+            <div>
+                <label for="name">Name*</label>
+                <input  
+                name="name" 
+                id="name" 
+                type="text" 
+                placeholder="First and Last" 
+                required>
+            </div>  
+            <div>
+                <label for="phone">Phone*</label>
+                <input 
+                name="phone" 
+                id="phone" type="tel" 
+                placeholder="xxx-xxx-xxxx" 
+                required
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+            </div>
+            <div>
+                <label for="email">Email*</label>
+                <input 
+                name="email" 
+                id="email" 
+                type="email" 
+                required>
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <textarea name="address" id="address"></textarea>
+            </div>
+            <div>
+                <label for="reason">Reason for Contact*</label>
+                <textarea name="reason" id="reason" required></textarea>
+            </div>
+            <div id="contactYou"> 
+                <label>Preferred Contact Method*</label>
+                <label for="mail">Email</label>
+                <input name="mail" id="mail" type="radio">
+                <label for="phoneNum">Phone</label>
+                <input name="phoneNum" id="phoneNum" type="radio">
+                <label for="snailMail">Snail Mail</label>
+                <input name="snailMail" id="snailMail" type="radio">
+            </div>
+            <div id="submit">
+                <input value="Submit" type="submit">
+             </div>
+        </fieldset>
+      </form>
+
+      <footer>Danielle Marshall 2020</footer>
+
+    </body>
